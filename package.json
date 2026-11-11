@@ -1,0 +1,15 @@
+{
+  "name": "sakura-ramen-menu",
+  "version": "1.0.0",
+  "private": true,
+  "description": "منوی رستوران ژاپنی - فرانت‌اند با Tailwind CSS v4 و Vanilla JS",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/style.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/style.css --minify",
+    "serve": "npx --yes serve -l 5173 ."
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
+  }
+}

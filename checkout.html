@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تکمیل خرید | ساکورا رامن</title>
+  <meta name="theme-color" content="#f6efe1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Vazirmatn:wght@300;400;500;700;900&family=Yuji+Syuku&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="dist/style.css" />
+</head>
+<body class="min-h-screen">
+  <div data-header></div>
+
+  <main class="mx-auto max-w-6xl px-4 pt-10">
+    <div id="checkout-head" class="text-center">
+      <p class="font-brush tracking-[.5em] text-shu">お会計</p>
+      <h1 class="mt-2 text-4xl font-black">تکمیل خرید</h1>
+      <!-- steps -->
+      <ol class="mx-auto mt-8 flex max-w-md items-center justify-between text-xs font-bold">
+        <li class="flex flex-col items-center gap-2"><span class="hanko size-9 text-sm">一</span>سبد خرید</li>
+        <li class="h-px flex-1 bg-shu/40"></li>
+        <li class="flex flex-col items-center gap-2"><span class="hanko size-9 text-sm">二</span>اطلاعات و پرداخت</li>
+        <li class="h-px flex-1 bg-ink/15"></li>
+        <li class="flex flex-col items-center gap-2 text-ink-soft"><span data-step3 class="grid size-9 place-items-center rounded-sm border border-ink/20 font-brush text-sm">三</span>ثبت سفارش</li>
+      </ol>
+    </div>
+
+    <div id="checkout" class="mt-12"></div>
+  </main>
+
+  <div data-footer></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>
+

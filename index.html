@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ساکورا رامن | منوی غذای ژاپنی</title>
+  <meta name="description" content="منوی رستوران ژاپنی ساکورا رامن — رامن، سوپ میسو، اودون و افزودنی‌ها" />
+  <meta name="theme-color" content="#f6efe1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Vazirmatn:wght@300;400;500;700;900&family=Yuji+Syuku&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="dist/style.css" />
+</head>
+<body class="min-h-screen">
+  <div data-header></div>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="relative overflow-hidden">
+      <!-- red sun -->
+      <div class="pointer-events-none absolute hidden md:block top-10 left-1/2 size-28 -translate-x-1/2 rounded-full opacity-90 md:top-16 md:size-36"
+           style="background:radial-gradient(circle at 40% 40%,#e0553f,#b3261e 60%,#9e1f18)"></div>
+      <!-- mountain ink -->
+      <svg class="pointer-events-none absolute bottom-0 left-0 w-full text-ink/10" viewBox="0 0 1440 260" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="currentColor" d="M0 260 L0 210 C120 200 220 190 320 170 L520 60 Q560 40 600 62 L760 150 C860 180 980 120 1080 150 C1200 185 1320 170 1440 190 L1440 260 Z"/>
+        <path fill="#f6efe1" opacity=".9" d="M520 60 Q560 40 600 62 L640 84 L615 92 L598 80 L578 98 L555 82 L532 96 L505 78 Z"/>
+      </svg>
+      <!-- vertical jp text -->
+      <p class="absolute top-16 right-4 hidden font-brush text-2xl tracking-[.4em] text-ink/70 vertical-jp lg:block">日本の味</p>
+
+      <div class="relative mx-auto grid max-w-6xl items-center gap-10 px-4 pt-14 pb-20 md:grid-cols-2 md:pt-20 md:pb-28">
+        <div class="relative z-10 text-center md:text-right">
+          <span class="inline-flex items-center gap-2 rounded-full border border-shu/30 bg-paper/70 px-4 py-1.5 text-xs font-bold text-shu">
+            <span class="size-1.5 rounded-full bg-shu"></span> طعم اصیل ژاپن · Authentic Japanese
+          </span>
+          <h1 class="mt-6">
+            <span class="block font-display text-3xl text-ink-soft" dir="ltr">Japanese</span>
+            <span class="block font-display text-7xl leading-none text-ink md:text-8xl" dir="ltr">Ramen</span>
+            <span class="mt-4 block text-3xl font-black md:text-4xl">یک کاسه سنت، <span class="text-shu">یک دنیا طعم</span></span>
+          </h1>
+          <p class="mx-auto mt-5 max-w-md leading-8 text-ink-soft md:mx-0">
+            رامن‌های دست‌ساز، سوپ‌های گرم و افزودنی‌های تازه؛ با دستور سنتی و عشق سرآشپز، مستقیم تا درب منزل شما.
+          </p>
+          <div class="mt-8 flex flex-wrap justify-center gap-3 md:justify-start">
+            <a href="#menu" class="btn-primary">مشاهده منو
+              <svg class="size-4" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+            </a>
+            <a href="product.html?id=tonkotsu-ramen" class="btn-ghost">پیشنهاد سرآشپز</a>
+          </div>
+          <div class="mt-10 flex justify-center gap-8 text-center md:justify-start">
+            <div><p class="text-2xl font-black text-shu">۲۰+</p><p class="text-xs text-ink-soft">نوع غذا</p></div>
+            <div class="w-px bg-ink/15"></div>
+            <div><p class="text-2xl font-black text-shu">۱۸ ساعت</p><p class="text-xs text-ink-soft">پخت آب‌گوشت</p></div>
+            <div class="w-px bg-ink/15"></div>
+            <div><p class="text-2xl font-black text-shu">۴۵ دقیقه</p><p class="text-xs text-ink-soft">ارسال سریع</p></div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img src="assets/dishes/hero-ramen.jpg" alt="کاسه رامن" class="dish-img mask-fade relative z-10 mx-auto w-full max-w-lg animate-float" />
+          <!-- tip bubble -->
+          <div class="absolute -bottom-2 right-2 z-20 rotate-[-4deg] rounded-full bg-sakura-light/90 px-6 py-5 text-center shadow-card md:right-0">
+            <p class="font-display text-xl" dir="ltr">Slurp. Savor. Repeat.</p>
+            <p class="text-xs text-ink-soft">داغ بخورید، با صدا هورت بکشید ♥</p>
+          </div>
+          <span class="hanko absolute top-4 left-4 z-20 h-20 w-10 text-xl vertical-jp">拉麺</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MENU ================= -->
+    <section id="menu" class="mx-auto max-w-6xl scroll-mt-24 px-4">
+      <div class="text-center">
+        <p class="font-brush text-lg tracking-[.5em] text-shu">お品書き</p>
+        <h2 class="mt-2 text-4xl font-black">منوی ما</h2>
+        <div class="mx-auto mt-4 flex max-w-xs items-center gap-3">
+          <span class="ink-divider"></span><span class="text-shu">✿</span><span class="ink-divider"></span>
+        </div>
+        <p class="mt-3 text-sm text-ink-soft">یک دسته‌بندی را انتخاب کنید تا غذاهای مرتبط نمایش داده شوند</p>
+      </div>
+
+      <!-- category tabs -->
+      <div id="categories" role="tablist" class="scrollbar-none mt-10 flex gap-3 overflow-x-auto pb-2 md:justify-center"></div>
+
+      <!-- category heading -->
+      <div id="cat-heading" class="mt-10 flex items-end justify-between gap-4 border-b border-ink/10 pb-4"></div>
+
+      <!-- products -->
+      <div id="products" class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"></div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="mx-auto mt-28 max-w-6xl scroll-mt-24 px-4">
+      <div class="frame grid items-center gap-10 overflow-hidden p-8 md:grid-cols-3 md:p-12">
+        <div class="md:col-span-2">
+          <p class="font-brush tracking-[.4em] text-shu">ラーメンの心</p>
+          <h2 class="mt-2 text-3xl font-black">جوهره رامن</h2>
+          <p class="mt-4 leading-8 text-ink-soft">نودل، آب‌گوشت، افزودنی‌ها و دل. مواد ساده، امکانات بی‌نهایت. ما هر روز آب‌گوشت را از نو و به‌آرامی می‌پزیم، نودل‌ها را تازه آماده می‌کنیم و هر کاسه را مثل یک اثر هنری می‌چینیم.</p>
+          <ul class="mt-6 grid gap-3 text-sm sm:grid-cols-3">
+            <li class="flex items-center gap-2"><span class="hanko size-7 text-xs">一</span> داغ میل کنید</li>
+            <li class="flex items-center gap-2"><span class="hanko size-7 text-xs">二</span> با صدا هورت بکشید</li>
+            <li class="flex items-center gap-2"><span class="hanko size-7 text-xs">三</span> از هر لقمه لذت ببرید</li>
+          </ul>
+        </div>
+        <div class="relative text-center">
+          <p class="font-display text-3xl leading-snug -rotate-6" dir="ltr">Ramen is more<br/>than food.<br/><span class="text-shu">It's a feeling ♥</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
