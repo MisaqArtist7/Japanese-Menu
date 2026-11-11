@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>تکمیل خرید | ساکورا رامن</title>
-  <meta name="theme-color" content="#f6efe1" />
+  <meta name="theme-color" content="#faf6ee" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Vazirmatn:wght@300;400;500;700;900&family=Yuji+Syuku&display=swap" rel="stylesheet" />
@@ -13,21 +13,31 @@
 <body class="min-h-screen">
   <div data-header></div>
 
-  <main class="mx-auto max-w-6xl px-4 pt-10">
+  <main class="mx-auto max-w-6xl px-4 pt-8">
     <div id="checkout-head" class="text-center">
-      <p class="font-brush tracking-[.5em] text-shu">お会計</p>
-      <h1 class="mt-2 text-4xl font-black">تکمیل خرید</h1>
-      <!-- steps -->
-      <ol class="mx-auto mt-8 flex max-w-md items-center justify-between text-xs font-bold">
-        <li class="flex flex-col items-center gap-2"><span class="hanko size-9 text-sm">一</span>سبد خرید</li>
-        <li class="h-px flex-1 bg-shu/40"></li>
-        <li class="flex flex-col items-center gap-2"><span class="hanko size-9 text-sm">二</span>اطلاعات و پرداخت</li>
-        <li class="h-px flex-1 bg-ink/15"></li>
-        <li class="flex flex-col items-center gap-2 text-ink-soft"><span data-step3 class="grid size-9 place-items-center rounded-sm border border-ink/20 font-brush text-sm">三</span>ثبت سفارش</li>
+      <span class="rounded-full bg-shu/10 px-3.5 py-1 font-brush text-xs tracking-[.35em] text-shu">お会計 · CHECKOUT</span>
+      <h1 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">تکمیل و ثبت سفارش</h1>
+
+      <!-- Modern Progress Stepper -->
+      <ol class="frame mx-auto mt-7 flex max-w-lg items-center justify-between px-6 py-4 text-xs font-bold">
+        <li class="flex items-center gap-2.5">
+          <span class="hanko size-8 text-xs">一</span>
+          <span>سبد خرید</span>
+        </li>
+        <li class="mx-2 h-0.5 flex-1 rounded-full bg-gradient-to-l from-shu to-shu/40"></li>
+        <li class="flex items-center gap-2.5">
+          <span class="hanko size-8 text-xs">二</span>
+          <span>اطلاعات و پرداخت</span>
+        </li>
+        <li class="mx-2 h-0.5 flex-1 rounded-full bg-ink/10" data-step-line></li>
+        <li class="flex items-center gap-2.5 text-ink-soft">
+          <span data-step3 class="grid size-8 place-items-center rounded-xl border border-ink/15 bg-paper font-brush text-xs">三</span>
+          <span>ثبت نهایی</span>
+        </li>
       </ol>
     </div>
 
-    <div id="checkout" class="mt-12"></div>
+    <div id="checkout" class="mt-10"></div>
   </main>
 
   <div data-footer></div>
@@ -37,4 +47,3 @@
   <script src="js/checkout.js"></script>
 </body>
 </html>
-

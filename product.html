@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>جزئیات غذا | ساکورا رامن</title>
-  <meta name="theme-color" content="#f6efe1" />
+  <meta name="theme-color" content="#faf6ee" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Vazirmatn:wght@300;400;500;700;900&family=Yuji+Syuku&display=swap" rel="stylesheet" />
@@ -13,28 +13,28 @@
 <body class="min-h-screen">
   <div data-header></div>
 
-  <main class="mx-auto max-w-6xl px-4 pt-8">
-    <!-- breadcrumb -->
-    <nav id="breadcrumb" class="flex flex-wrap items-center gap-2 text-sm text-ink-soft"></nav>
+  <main class="mx-auto max-w-6xl px-4 pt-6">
+    <!-- Modern Breadcrumb -->
+    <nav id="breadcrumb" class="inline-flex flex-wrap items-center gap-2 rounded-2xl border border-ink/[0.07] bg-surface/75 px-4 py-2 text-xs font-medium text-ink-soft backdrop-blur-md"></nav>
 
-    <!-- product detail -->
+    <!-- Product Detail -->
     <section id="product" class="mt-6"></section>
 
-    <!-- related -->
+    <!-- Related Products -->
     <section class="mt-24">
-      <div class="flex items-end justify-between border-b border-ink/10 pb-4">
+      <div class="flex items-end justify-between border-b border-ink/[0.08] pb-4">
         <div>
-          <p class="font-brush text-sm tracking-[.3em] text-shu">おすすめ</p>
-          <h2 class="text-2xl font-black">شاید این‌ها را هم دوست داشته باشید</h2>
+          <span class="rounded-full bg-shu/10 px-3 py-0.5 font-brush text-xs tracking-[.25em] text-shu">おすすめ · RECOMMENDED</span>
+          <h2 class="mt-2 text-2xl font-black">شاید این‌ها را هم دوست داشته باشید</h2>
         </div>
-        <a id="related-more" href="index.html#menu" class="text-sm font-bold text-shu hover:underline">مشاهده همه</a>
+        <a id="related-more" href="index.html#menu" class="rounded-xl border border-ink/10 bg-surface px-3.5 py-2 text-xs font-bold text-shu transition hover:border-shu hover:bg-shu hover:text-surface">مشاهده همه ←</a>
       </div>
-      <div id="related" class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"></div>
+      <div id="related" class="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4"></div>
     </section>
   </main>
 
-  <!-- sticky mobile buy bar -->
-  <div id="mobile-bar" class="fixed inset-x-0 bottom-0 z-40 border-t border-ink/10 bg-paper/95 p-3 backdrop-blur md:hidden"></div>
+  <!-- Sticky Mobile Buy Bar -->
+  <div id="mobile-bar" class="fixed inset-x-0 bottom-0 z-40 border-t border-ink/10 bg-surface/90 p-3 shadow-2xl backdrop-blur-xl md:hidden"></div>
 
   <div data-footer></div>
 
@@ -43,4 +43,3 @@
   <script src="js/product.js"></script>
 </body>
 </html>
-
